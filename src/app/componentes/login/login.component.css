@@ -1,0 +1,23 @@
+#LoginCover{
+    min-width: 1080px;
+    min-height: 925px;
+    margin: 0px;
+    padding: 0px;
+    background-image: url('../../../assets/img/ganadores-novus-triada-tec-de-monterrey-conecta_0.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+#socialIcon {
+    z-index: 100;
+    position: fixed;
+    top: 40%;
+    left: 0px;
+    border-radius: 20px;
+}
+.elementor-widget-container{
+    list-style: none;
+    justify-content: center;
+    padding-left: 5px !important;
+}
+

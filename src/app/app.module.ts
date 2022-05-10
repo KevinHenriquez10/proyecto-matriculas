@@ -11,6 +11,7 @@ import { Section2Component } from './componentes/section2/section2.component';
 import { IndexComponent } from './paginas/index/index.component';
 import { AdministradorComponent } from './paginas/administrador/administrador.component';
 import { ColaboradorComponent } from './paginas/colaborador/colaborador.component';
+import { LoginComponent } from './componentes/login/login.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { ColaboradorComponent } from './paginas/colaborador/colaborador.componen
     Section2Component,
     IndexComponent,
     AdministradorComponent,
-    ColaboradorComponent
+    ColaboradorComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
