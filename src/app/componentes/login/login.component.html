@@ -1,26 +1,27 @@
-<div class="img-fluid d-flex justify-content-center" id="LoginCover" style="align-items:center ;">
-    <div class="bg-white d-flex align-items-center" style="width: 450px; height:450px; border-radius:25px; opacity:0.7; background-color: transparent;">
-        <div class="row text-center"style="font-size: 25px;"style="font-size: 20px;">
-            <div class="form-group col-md-12">
-                <label for="" class="mb-2">Usuario<input type="text" class="form-control" placeholder="Ingrese su usuario"></label>
-            </div>
-            <div class="form-group col-md-12">
-                <label for="" class="mb-2">Contraseña<input type="password" class="form-control mb-2" placeholder="Ingrese su contraseña"></label><br>
-                <button type="button" class="btn btn-outline-primary mx-2 mb-3">Aceptar</button>
-                <button type="button" class="btn btn-outline-warning mx-2 mb-3">Cancelar</button><br>
-                <a href="#">¿ha olvidado su contraseña? click aquí!</a><br>
-                <a href="#">¿no tienes una cuenta? registrate!</a><br>
-            </div>
-            <div class="elementor-widget-container "> 
-                <div id="socialIcon" style="background-color: white;">
-                    <ul style="list-style: none; opacity:1px !important; padding-left: 0px;">
-                        <a href="https://www.instagram.com/explore/locations/244020009/corporacion-universitaria-latinoamericana-ies/"><li><i class="fab fa-instagram" style="font-size: 60px; color: rgb(206, 77, 178);"></i></li></a>
-                        <a href="https://www.facebook.com/culbarranquilla"><li><i class="fab fa-facebook-square"style="font-size: 60px; color:light-blue;"></i></li></a>	
-                        <a href="https://www.youtube.com/watch?v=xZ1dSNGHo64"><li><i class="fab fa-youtube"style="font-size: 60px;color:red;"></i></li></a>	
-                        <a href="https://twitter.com/culbarranquilla"><li><i class="fab fa-twitter-square"style="font-size: 60px;color:blue;"></i></li></a>	
-                    </ul>
+<app-menu></app-menu>
+<app-header></app-header>
+<div class="container">
+    <form [formGroup]="myFormLogin">
+        <div class="img-fluid d-flex justify-content-center centrar" id="LoginCover">
+            <div class="bg-white d-flex align-items-center loginbox">
+                <div class="row text-center d-flex justify-content-center big">
+                    <div class="form-floating col-md-8 mt-3">
+                        <input id="inpUsuario" type="text" formControlName="inpUsuario" class="form-control" placeholder="Usuario">
+                        <label for="inpUsuario">Usuario</label>
+                    </div>
+                    <div class="form-floating col-md-8 mt-3">
+                        <input type="password" class="form-control" formControlName="inpPassword" placeholder="Contraseña">
+                        <label for="inpPassword">Contraseña</label><br>
+                    </div>
+                    <div class="form-group col-md-12">
+                        <button type="button" class="btn btn-outline-primary mx-2 mb-3">Aceptar</button>
+                        <button type="submit" (click)="login(myFormLogin.value)" class="btn btn-outline-warning mx-2 mb-3">Cancelar</button><br>
+                        <a href="#">¿ha olvidado su contraseña? click aquí!</a><br>
+                        <a routerLink="../registro">¿no tienes una cuenta? registrate!</a><br>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+    </form>
 </div>
+<app-footer></app-footer>

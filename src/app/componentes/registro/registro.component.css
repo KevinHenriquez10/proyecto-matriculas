@@ -1,0 +1,11 @@
+.centrar{
+    align-items: center !important;
+}
+.form-box{
+    border-radius:25px; 
+    opacity:0.7; 
+    background-color: transparent;
+}
+.big{
+    font-size: 20px;
+}

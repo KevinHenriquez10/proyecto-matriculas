@@ -1,1 +1,25 @@
-<p>administrador works!</p>
+<app-menu></app-menu>
+<app-header></app-header>
+<div class="container bg-info my-5 text-center">
+    <button class="btn btn-primary my-5 mx-5" (click)="crearTabla()">Cargar Usuarios</button>
+    <button class="btn btn-warning my-5 mx-5" (click)="actualizarRegistro()">Modificar Registro</button>
+    <button class="btn btn-primary my-5 mx-5" (click)="eliminarRegistro()">Eliminar registro</button>
+    <div class="row" style="justify-content: center; width: auto;">
+        <div class="col-md-12 d-flex"style="justify-content:center;">
+            <div class="table" id="crearTabla">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Nombre</th>
+                        <th scope="col">Apellido</th>
+                        <th scope="col">Correo</th>
+                        <th scope="col">Tipo</th>
+                        <th scope="col">Usuario</th>
+                        <th scope="col">Contraseña</th>
+                    </tr>
+                </thead>
+            </div>
+        </div>
+    </div>
+</div>
+<app-footer></app-footer>

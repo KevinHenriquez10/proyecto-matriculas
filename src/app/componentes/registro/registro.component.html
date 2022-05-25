@@ -1,0 +1,45 @@
+<app-menu></app-menu>
+<app-header></app-header>
+<div class="container my-5">
+    <form [formGroup]="myFormRegister">
+        <div class="img-fluid d-flex justify-content-center" id="LoginCover">
+            <div class="row bg-white text-center d-flex form-box mt-4 justify-content-center big" style="width:75%">
+                <h3 class="text-center mt-3">Registro</h3>
+                <div class="form-floating col-md-6 mt-3 mx-2">
+                    <input id="inpNombre" type="text" formControlName="inpNombre" class="form-control" placeholder="Nombres"required>
+                    <label for="inpNombre">Nombres</label>
+                </div>
+                <div class="form-floating col-md-6 mx-2 mt-3">
+                    <input id="inpApellido" type="text" formControlName="inpApellido" class="form-control" placeholder="Apellidos"required>
+                    <label for="inpApellido">Apellido</label>
+                </div>
+                <div class="form-floating col-md-6 mx-2 mt-3">
+                    <input id="inpEmail" type="email" formControlName="inpEmail" class="form-control" placeholder="example@domain.com"required>
+                    <label for="inpEmail">example@domain.com</label>
+                </div> 
+                <div class="form-floating col-md-6 mx-2 mt-3">
+                    <select formControlName="inpTipo" class="form-control" placeholder="Administrador">
+                        <option value="Administrador">Administrador</option>
+                        <option value="Usuario">Usuario</option>
+                    </select>
+                    <label for="inpEmail">Tipo</label>
+                </div>                
+                <div class="form-floating col-md-6 mx-2 mt-3">
+                    <input id="inpUsuario" type="text" formControlName="inpUsuario" class="form-control" placeholder="Usuario"required>
+                    <label for="inpUsuario">Usuario</label>
+                </div>
+                <div class="form-floating col-md-6 mx-2 mt-3">
+                    <input type="password" class="form-control" formControlName="inpPassword" placeholder="Contraseña"required>
+                    <label for="inpPassword">Contraseña</label><br>
+                </div>
+                <div class="form-group col-md-12 my-3 justify-content-center mb-5 centrar">
+                    <label for="chkTerminos" class="mb-2">Acepto los terminos y condiciones</label>
+                    <input type="checkbox" id="chkTerminos" style="margin-left:5px; align-items:center" required><br>
+                    <button (click)="registrar(myFormRegister.value)" type="submit" class="btn btn-outline-primary mx-2 ">Aceptar</button>
+                    <button type="submit" class="btn btn-outline-warning mx-2">Cancelar</button><br>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+<app-footer></app-footer>

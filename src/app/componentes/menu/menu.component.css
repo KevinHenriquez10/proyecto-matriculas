@@ -1,3 +1,14 @@
-#fondo-login{
-    background-image: url('../../../assets/img/ganadores-novus-triada-tec-de-monterrey-conecta_0.jpg');
+a{
+    color:darkgoldenrod;
+    text-decoration:none;
+    
+}
+a:hover{
+    color:rgb(58, 55, 224);
+}
+.menu{
+    z-index: 100;
+    position: sticky;
+    top: 0px;
+    font-size: 20px;
 }

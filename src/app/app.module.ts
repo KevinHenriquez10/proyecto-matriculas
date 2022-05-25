@@ -12,6 +12,8 @@ import { IndexComponent } from './paginas/index/index.component';
 import { AdministradorComponent } from './paginas/administrador/administrador.component';
 import { ColaboradorComponent } from './paginas/colaborador/colaborador.component';
 import { LoginComponent } from './componentes/login/login.component';
+import { RegistroComponent } from './componentes/registro/registro.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -24,11 +26,13 @@ import { LoginComponent } from './componentes/login/login.component';
     IndexComponent,
     AdministradorComponent,
     ColaboradorComponent,
-    LoginComponent
+    LoginComponent,
+    RegistroComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
